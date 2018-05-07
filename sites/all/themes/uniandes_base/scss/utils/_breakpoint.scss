@@ -1,0 +1,41 @@
+// $minMobile: 400px !default;
+// $onlyMobile: 480px !default;
+// $anchoMobile: 767px !default;
+// $anchoTablet: 991px !default;
+// $anchoDesktop: 1200px !default;
+
+
+@mixin media-query($media-query) {
+
+	@if $media-query == minMobile {
+		@media only screen and (max-width: $minMobile) { @content; }
+	}
+	@if $media-query == mobile {
+		@media only screen and (max-width: $onlyMobile) { @content; }
+	}
+	@if $media-query == anchoMobile {
+		@media only screen and (min-width: $anchoMobile) { @content; }
+	}
+	@if $media-query == mobileMedium {
+		@media only screen and (min-width: $mediumMobile) { @content; }
+	}
+	@if $media-query == anchoTablet {
+		@media only screen and (min-width: $anchoTablet) { @content; }
+	}
+
+	@if $media-query == maxTablet {
+		@media only screen and (max-width: $anchoTablet) { @content; }
+	}
+	@if $media-query == anchoDesktop {
+		@media only screen and (min-width: $anchoDesktop) { @content; }
+	}
+}
+
+
+@mixin minMobile { @include media-query(minMobile) { @content }; }
+@mixin mobile { @include media-query(mobile) { @content }; }
+@mixin anchoMobile { @include media-query(mediumMobile) { @content }; }
+@mixin anchoMobile { @include media-query(anchoMobile) { @content }; }
+@mixin anchoTablet { @include media-query(anchoTablet) { @content }; }
+@mixin anchoTablet { @include media-query(maxTablet) { @content }; }
+@mixin anchoDesktop { @include media-query(anchoDesktop) { @content }; }

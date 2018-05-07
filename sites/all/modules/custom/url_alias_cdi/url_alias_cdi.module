@@ -1,0 +1,277 @@
+<?php
+
+/**
+ * Reemplaza todos los acentos por sus equivalentes sin ellos
+ *
+ * @param $string
+ *  string la cadena a sanear
+ *
+ * @return $string
+ *  string saneada
+ */
+
+function url_alias_cdi_init(){
+    
+}
+
+function sanear_string_alias_manual($string)
+{
+    $string = trim($string);
+
+
+    $string = str_replace(
+        array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+        array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+        $string
+    );
+
+    $string = str_replace(
+        array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+        array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+        $string
+    );
+
+    $string = str_replace(
+        array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+        array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+        array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+        array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ñ', 'Ñ', 'ç', 'Ç'),
+        array('n', 'N', 'c', 'C',),
+        $string
+    );
+
+    //Esta parte se encarga de eliminar cualquier caracter extraño
+    $string = str_replace(
+        array("\\", "¨", "º", "~",
+            "#", "@", "|", "!", "\"",
+            "·", "$", "%", "&","*",
+            "(", ")", "?", "'", "¡",
+            "¿", "[", "^", "<code>", "]",
+            "+", "}", "{", "¨","‘","’", "´",
+            ">", "< ", ";", ",", ":",
+            ".", "…"),
+        '',
+        $string
+    );
+
+    $string = str_replace(" ", "-", $string);
+    $string = str_replace("---","-", $string);
+    $string = str_replace("--","-", $string);
+
+    
+
+    return $string;
+}
+
+
+function sanear_string($string)
+{
+    $string = trim($string);
+    $string = strtolower($string);
+
+
+    $string = str_replace(
+        array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+        array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+        $string
+    );
+
+    $string = str_replace(
+        array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+        array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+        $string
+    );
+
+    $string = str_replace(
+        array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+        array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+        array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+        array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ñ', 'Ñ', 'ç', 'Ç'),
+        array('n', 'N', 'c', 'C',),
+        $string
+    );
+
+    //Esta parte se encarga de eliminar cualquier caracter extraño
+    $string = str_replace(
+        array("\\", "¨", "º", "-", "~",
+            "#", "@", "|", "!", "\"",
+            "·", "$", "%", "&", "/","*",
+            "(", ")", "?", "'", "¡",
+            "¿", "[", "^", "<code>", "]",
+            "+", "}", "{", "¨","‘","’", "´",
+            ">", "< ","-", ";", ",", ":",
+            ".", "…"),
+        '',
+        $string
+    );
+
+    $string = str_replace(" ", "-", $string);
+    $string = str_replace("---","-", $string);
+    $string = str_replace("--","-", $string);
+
+    
+
+    return $string;
+}
+
+function sanear_string_solo_texto($string)
+{
+    $string = trim($string);
+
+    $string = str_replace(
+        array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+        array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+        $string
+    );
+
+    $string = str_replace(
+        array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+        array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+        $string
+    );
+
+    $string = str_replace(
+        array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+        array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+        array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+        array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+        $string
+    );
+
+    $string = str_replace(
+        array('ñ', 'Ñ', 'ç', 'Ç'),
+        array('n', 'N', 'c', 'C',),
+        $string
+    );
+
+
+    return $string;
+}
+
+
+
+function url_alias_cdi_taxonomy_term_presave($term) {
+
+if($term->vocabulary_machine_name=="tags" || $term->vocabulary_machine_name=="subcategoria"){
+    $term->path['alias']="tags/".sanear_string($term->name);
+    $term->path['pathauto']=0;
+}else{
+  $term->path['alias']=sanear_string($term->name); 
+  $term->path['pathauto']=0; 
+}
+
+}
+
+
+
+function url_alias_cdi_node_presave( $node ){
+    
+    /*
+     * AL INGRESAR UNA NOTICIA SE GENERA AUTOMATICAMENTE EL ALIAS CON LA URL DE LA CATEGORIA 
+     */
+    
+    if($node->path["alias"]!=""){
+        $node->path["alias"]=sanear_string_alias_manual( strtolower($node->path[ "alias" ]));
+    }else{
+
+    $node->path['pathauto']=0;
+    $node->path[ "alias" ]=sanear_string($node->title);
+
+    if( $node->type == "noticias" ){
+
+        $subcategoria_tid = $node->field_subcategoria_noticias[ "und" ][ 0 ][ "tid" ];
+        $subcategoria = taxonomy_term_load( $subcategoria_tid );
+        $alias1 = drupal_get_path_alias( "taxonomy/term/" . $subcategoria->tid );
+
+        $texto_noticia = sanear_string( strtolower(  $node->title ) );
+
+
+
+        if( !strstr( $alias1, "term" ) ){
+            if( $node->language == "es" ){
+                $node->path[ "alias" ] = "noticias/" . $alias1 . "/" . $texto_noticia;
+            }else{
+                $node->path[ "alias" ] = "news/" . $alias1 . "/" .$texto_noticia;
+            }
+        }else{
+            if( $node->language == "es" ){
+                $node->path[ "alias" ] = "noticias/" . $texto_noticia;
+            }else{
+                $node->path[ "alias" ] = "news/" . $texto_noticia;
+            }
+        }
+
+        if($node->field_es_mult_des_noticias['und'][0]['value']==1){
+            $node->field_multimedia_noticias['und'][0]['value']=1;
+        }
+
+    }
+
+    if ($node->type =="publicaciones"){
+        global $language;
+        if ($language->language=="es"){
+            $publicacionUrl="publicaciones";
+        }else{
+            $publicacionUrl="publications";
+        }
+    $node->path['pathauto']=0;
+    $node->path[ "alias" ] = $publicacionUrl."/".sanear_string( strtolower(  $node->title ) );
+    }
+
+
+     if ($node->type =="eventos"){
+        global $language;
+        if ($language->language=="es"){
+            $publicacionUrl="eventos";
+        }else{
+            $publicacionUrl="events";
+        }
+    $node->path['pathauto']=0;
+    $node->path[ "alias" ] = $publicacionUrl."/".sanear_string( strtolower(  $node->title ) );
+    }
+
+   
+   }
+   
+}
+

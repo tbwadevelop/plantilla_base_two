@@ -1,0 +1,21 @@
+name = Uniandes base
+description = Uniandes sitio base
+core = 7.x
+base theme = bootstrap
+
+
+;; ADD JS FILES ;;
+scripts[] = js/slick.js
+scripts[] = js/custom.js
+scripts[] = js/back.js
+
+
+;; ADD CSS FILES ;;
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/front.css
+
+
+
+
+

@@ -1,0 +1,93 @@
+<?php
+
+module_load_include('inc', 'uniandes_calendario', 'uniandes_calendario.features.field_base');
+module_load_include('inc', 'uniandes_calendario', 'uniandes_calendario.features.field_instance');
+module_load_include('inc', 'uniandes_calendario', 'uniandes_calendario.features.taxonomy');
+
+/**
+ * @file
+ * install file for Event Calendar module.
+ */
+
+// Machine name for our custom taxonomy.
+define('TAXONOMY_TYPE', 'categoria_eventos');
+define('NODE_TYPE', 'eventos');
+
+/**
+ * Implements hook_install().
+ *
+ * We are using hook_install() to define our node content type and its fields
+ *
+ * @see is_node_type_already_exist()
+ * @see _create_taxonomy()
+ * @see _create_content_type()
+ */
+function uniandes_calendario_install() {
+  node_types_rebuild();
+  // Remove next line if 'body' => 0.
+  _uniandes_calendario_create_taxonomy();
+  _uniandes_calendario_add_custom_fields();
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * We are using hook_uninstall() to delete our node content type and its fields
+ *
+ * @see field_delete_instance()
+ * @see field_delete_field()
+ * @see taxonomy_term_delete()
+ * @see variable_del()
+ */
+function uniandes_calendario_uninstall() {
+  // Rebuild database cache of node types.
+  node_types_rebuild();
+  // Rebuild database cache of menus.
+  menu_rebuild();
+}
+
+/**
+ * Function to create a taxonomy and attach fields to it.
+ *
+ * @see taxonomy_vocabulary_save()
+ * @see taxonomy_vocabulary_save()
+ */
+function _uniandes_calendario_create_taxonomy() {
+  $t = get_t();
+  $taxonomy = taxonomy_vocabulary_machine_name_load(TAXONOMY_TYPE);
+  if (empty($taxonomy)) {
+    $obj = uniandes_calendario_taxonomy_default_vocabularies();
+    $taxonomy = (object) $obj[TAXONOMY_TYPE];
+    taxonomy_vocabulary_save($taxonomy);
+  }
+}
+
+/**
+ * Function to create content type and its fields.
+ *
+ * @see node_add_body_field()
+ * @see node_type_save()
+ * @see field_create_field()
+ * @see field_create_instance()
+ */
+function _uniandes_calendario_add_custom_fields() {
+  foreach (uniandes_calendario_field_default_field_bases() as $field) {
+    $prior_field = field_read_field($field['field_name']);
+    if (empty($prior_field)) {
+      field_create_field($field);
+    } else {
+      field_update_field($field);
+    }
+  }
+  foreach (uniandes_calendario_field_default_field_instances() as $instance) {
+    $instance['entity_type'] = 'node';
+    $instance['bundle'] = 'eventos';
+    $prior_field = field_read_instance($instance['entity_type'], $instance['field_name'], $instance['bundle']);
+    if (empty($prior_field)) {
+      field_create_instance($instance);
+    } {
+      field_update_instance($instance);
+    }
+    
+  }
+}

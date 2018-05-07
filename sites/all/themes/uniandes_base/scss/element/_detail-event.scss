@@ -1,0 +1,95 @@
+.internal_events {
+	header {
+		&.title-block-events {
+			padding: 40px 0; 
+
+			h1 {
+				font-family: "Lato",sans-serif;
+				color: #484851;
+				font-size: 2rem;
+				line-height: 2rem;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: 900;
+				margin: 0;
+
+				@include media-query(anchoMobile) {
+					font-size: 2.5rem;
+					line-height: 2.6rem;
+				} 
+
+				&:before {
+					content: '';
+					border: 1px solid #484851;
+					display: inline-block;
+					height: 22px;
+					margin-right: 5px;
+					width: 5px;
+
+					@include media-query(anchoMobile) {
+						height: 33px;
+						width: 7px;
+						margin-right: 7px;
+					}
+				}
+			}
+		}
+
+		&.title-featured_events {
+			h3 {
+				a {
+					color: #484851;
+					font-size: 1.33rem;
+					font-weight: 600;
+					line-height: 1.33rem;
+					text-decoration: none;
+					display: block;
+					padding-bottom: 10px;
+
+
+					@include media-query(anchoMobile) {
+						height: 60px;
+					}
+				}
+			}
+		}
+	}
+
+	.list_featured_events {
+		padding:  0 0 40px;
+
+		@include media-query(anchoMobile) {
+			width: 47%;
+			margin: 0 1%;
+			display: inline-block;
+		}
+
+		@include media-query(anchoTablet) {
+			width: 30%;
+		}
+
+		.content-eventos {
+			background: #f4f1f1;
+			height: 200px;
+			margin-top: 8px;
+			padding: 25px;
+			position: relative;
+
+			.btn-evento {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+
+				.btn-default{
+					&.btn-border-blue {
+						background: transparent;
+
+						&:hover {
+							background: #1862a9;
+						}
+					}
+				}
+			}
+		}
+	}
+}

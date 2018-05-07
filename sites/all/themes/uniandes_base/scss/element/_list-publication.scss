@@ -1,0 +1,131 @@
+.container-publicaciones {
+	header {
+		padding: 40px 0;
+
+		&.title_featured_publications {
+			h2 {
+				font-family: "Lato",sans-serif;
+				color: #484851;
+				font-size: 2rem;
+				line-height: 2rem;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: 900;
+
+				@include media-query(anchoMobile) {
+					font-size: 2.5rem;
+					line-height: 2.6rem;
+				} 
+
+				&:before {
+					content: '';
+					border: 1px solid #484851;
+					display: inline-block;
+					height: 22px;
+					margin-right: 5px;
+					width: 5px;
+
+					@include media-query(anchoMobile) {
+						height: 33px;
+						width: 7px;
+						margin-right: 7px;
+					}
+				}
+			}
+		}
+	}
+
+	> ul {
+		padding: 0;
+
+		li {
+			list-style: none;
+			display: block;
+			width: 95%;
+			padding-bottom: 60px;
+
+			@include media-query(mobileMedium) {
+				float: left;
+				width: 45%;
+				margin: 0 10px;
+				padding: 0;
+			}
+
+			@include media-query(anchoMobile) {
+				width: 30%;
+			}
+			@include media-query(anchoDesktop) {
+				width: 23%;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			section {
+				max-width: 70%;
+				margin: 0 auto;
+
+				@include media-query(mobile) {
+					max-width: 100%;
+					margin: 0;
+				}
+				@include media-query(mobileMedium) {
+					min-height: 150px;
+					max-width: 100%;
+					margin: 0;
+				}
+
+				@include media-query(anchoDesktop) {
+					min-height: 100px;
+				}
+			}
+
+			img {
+				margin:  0 auto;
+			}
+
+			h2 {
+				color: #24242b;
+				text-decoration: none;
+				font-family: "Crimson Text",serif;
+				font-size: 1.3rem;
+				line-height: 1.1;
+				padding: 45px 0 15px;
+				max-width: 70%;
+				margin: 0 auto;
+
+				@include media-query(mobile) {
+					max-width: 100%;
+					margin: 0;
+				}
+
+				@include media-query(mobileMedium) {
+					max-width: 100%;
+					margin: 0;
+				}
+
+				@include media-query(anchoMobile) {
+					min-height: 121px;
+					padding: 25px 0 15px;
+				}
+			}
+
+			p {
+				font-size: 0.9rem;
+				color: #24242b;
+
+				@include media-query(mobile) {
+					font-size: 0.85rem;
+				}
+				@include media-query(anchoTablet) {
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+
+	.text-center {
+		clear: both;
+	}
+}

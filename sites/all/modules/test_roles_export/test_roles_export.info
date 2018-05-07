@@ -1,0 +1,3 @@
+name = Importar Roles Institucionales
+description = Modulo que permite importar los roles creados en el portal institucional
+core = 7.x

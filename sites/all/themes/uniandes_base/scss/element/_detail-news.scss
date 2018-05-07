@@ -1,0 +1,173 @@
+.block-notice-content {
+	.header-notice {
+		h1 {
+			font-size: 2rem;
+			font-family: "Lato",sans-serif;
+			text-align: center;
+			line-height: 2.6rem;
+			color: #24242b;
+			text-transform: uppercase;
+			font-weight: 900;
+
+			@include media-query(anchoMobile) {
+				font-size: 2.7rem;
+			}
+		}
+	}
+
+	.noticia-subcategoria {
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		padding: 40px 0;
+		width: 90%;
+
+		ul {
+			padding: 0;
+			overflow: hidden;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				border-top: 1px solid #9e9ca1;
+				width: 100%;
+				z-index: -1;
+			}
+
+			li {
+				background: #fff;
+				display: block;
+				width: 90%;
+				margin: 0 auto 10px;
+				border: 1px solid #9e9ca1;
+				padding: 5px 15px;
+				line-height: 1;
+
+				@include media-query(anchoMobile) {
+					display: inline-block;
+					margin: 0 10px 0 0;
+					width: auto;
+				}
+
+				a {
+					font-size: 0.9rem;
+					color: #484851;
+					display: block;
+					text-decoration: none;
+
+					&:hover {
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+
+
+	.txt-notice {
+		@include media-query(anchoMobile) {
+			width: 550px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.social-networks {
+			padding: 0;
+
+			@include media-query(anchoMobile) {
+				left: 45%;
+				margin: 0 0 0 -330px;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				z-index: 5;
+				transition: 0.3s;
+			}
+
+			li {
+				display: inline-block;
+				padding: 5px 0;
+
+				@include media-query(anchoMobile) {
+					display: block;
+				}
+
+				a {
+					display: block;
+					width: 40px;
+					height: 40px;
+				}
+
+				&.facebook {
+					a {
+						background: url('../img/facebook.svg') no-repeat center #547bbc;
+						background-size: 20px;
+					}
+				}
+
+				&.twitter {
+					a {
+						background: url('../img/twitter.svg') no-repeat center #78cbef;
+						background-size: 20px;
+					}
+				}
+				&.linkedin {
+					a {
+						background: url('../img/linkedin.svg') no-repeat center #2085c7;
+						background-size: 20px;
+					}
+				}
+			}
+		}
+
+		.tags-notice {
+			&:before {
+				height: 1px;
+				width: 44px;
+				background: #868686;
+				position: relative;
+				display: inline-block;
+				margin-bottom: 20px;
+				content: '';
+			}
+
+			ul {
+				overflow: hidden;
+				padding: 0;
+
+				li {
+					&.item-tag {
+						list-style: none;
+						position: relative;
+						float: left;
+						margin-right: 12px;
+						background: #f4f1f1;
+						transition: 0.3s;
+						margin-bottom: 5px;
+
+						a {
+							font-size: 0.72rem;
+							font-family: "Lato",sans-serif;
+							padding: 5px 8px;
+							color: #484851;
+							text-decoration: none;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		.date-notice {
+			span {
+				clear: both;
+				color: #e55d12;
+				font-size: 0.72rem;
+				line-height: 0.82rem;
+				font-family: "Lato",sans-serif;
+			}
+		}
+	}
+}

@@ -1,0 +1,1408 @@
+$data = array(
+  'bundles' => array(
+    'categoria' => (object) array(
+      'vid' => '3',
+      'name' => 'Categoria',
+      'machine_name' => 'categoria',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'categorias_publicaciones' => (object) array(
+      'vid' => '14',
+      'name' => 'Categorías Publicaciones',
+      'machine_name' => 'categorias_publicaciones',
+      'description' => 'Taxonomía para controlar los trimestres/categorías ',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'facultades' => (object) array(
+      'vid' => '8',
+      'name' => 'Facultades',
+      'machine_name' => 'facultades',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'paises' => (object) array(
+      'vid' => '6',
+      'name' => 'Paises',
+      'machine_name' => 'paises',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'subcategoria' => (object) array(
+      'vid' => '4',
+      'name' => 'SubCategoria',
+      'machine_name' => 'subcategoria',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'tags' => (object) array(
+      'vid' => '1',
+      'name' => 'Tags',
+      'machine_name' => 'tags',
+      'description' => 'Use tags to group articles on similar topics into categories.',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'taxonomia_audiencia' => (object) array(
+      'vid' => '2',
+      'name' => 'Audiencia',
+      'machine_name' => 'taxonomia_audiencia',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'tipo_de_contenido_maestra_11' => (object) array(
+      'vid' => '9',
+      'name' => 'Tipo de contenido maestra 11',
+      'machine_name' => 'tipo_de_contenido_maestra_11',
+      'description' => 'Tipo de contenido maestra 11',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'tipos_programas' => (object) array(
+      'vid' => '7',
+      'name' => 'Tipos caja listado 1',
+      'machine_name' => 'tipos_programas',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'language' => 'und',
+      'i18n_mode' => '4',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+  ),
+  'fields' => array(
+    'field_boton_anuncio' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'attributes' => array(
+          'target' => 'default',
+          'class' => '',
+          'rel' => '',
+        ),
+        'url' => 0,
+        'title' => 'optional',
+        'title_value' => '',
+        'title_maxlength' => 128,
+        'enable_tokens' => 1,
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_boton_anuncio' => array(
+                'url' => 'field_boton_anuncio_url',
+                'title' => 'field_boton_anuncio_title',
+                'attributes' => 'field_boton_anuncio_attributes',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_boton_anuncio' => array(
+                'url' => 'field_boton_anuncio_url',
+                'title' => 'field_boton_anuncio_title',
+                'attributes' => 'field_boton_anuncio_attributes',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_boton_anuncio',
+      'type' => 'link_field',
+      'module' => 'link',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'url' => array(
+          'type' => 'varchar',
+          'length' => 2048,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'title' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'attributes' => array(
+          'type' => 'text',
+          'size' => 'medium',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'anuncios',
+          1 => 'publicaciones',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+    'field_categoria' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'categoria',
+            'parent' => '0',
+          ),
+        ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_categoria' => array(
+                'tid' => 'field_categoria_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_categoria' => array(
+                'tid' => 'field_categoria_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_categoria',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'taxonomy_term' => array(
+          0 => 'subcategoria',
+        ),
+      ),
+    ),
+    'field_descripcion_publicitario' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_descripcion_publicitario' => array(
+                'value' => 'field_descripcion_publicitario_value',
+                'format' => 'field_descripcion_publicitario_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_descripcion_publicitario' => array(
+                'value' => 'field_descripcion_publicitario_value',
+                'format' => 'field_descripcion_publicitario_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_descripcion_publicitario',
+      'type' => 'text_long',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'publicaciones',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+    'field_es_un_programa_' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => '',
+          1 => '',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_es_un_programa_' => array(
+                'value' => 'field_es_un_programa__value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_es_un_programa_' => array(
+                'value' => 'field_es_un_programa__value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'field_name' => 'field_es_un_programa_',
+      'type' => 'list_boolean',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'int',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'taxonomy_term' => array(
+          0 => 'tipos_programas',
+        ),
+      ),
+    ),
+    'field_imagen_banner_mob_maestra4' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'uri_scheme' => 'public',
+        'default_image' => 0,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_imagen_banner_mob_maestra4' => array(
+                'fid' => 'field_imagen_banner_mob_maestra4_fid',
+                'alt' => 'field_imagen_banner_mob_maestra4_alt',
+                'title' => 'field_imagen_banner_mob_maestra4_title',
+                'width' => 'field_imagen_banner_mob_maestra4_width',
+                'height' => 'field_imagen_banner_mob_maestra4_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_imagen_banner_mob_maestra4' => array(
+                'fid' => 'field_imagen_banner_mob_maestra4_fid',
+                'alt' => 'field_imagen_banner_mob_maestra4_alt',
+                'title' => 'field_imagen_banner_mob_maestra4_title',
+                'width' => 'field_imagen_banner_mob_maestra4_width',
+                'height' => 'field_imagen_banner_mob_maestra4_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_imagen_banner_mob_maestra4',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'maestra_4',
+          1 => 'beneficio_tributario',
+          2 => 'donar',
+          3 => 'gracias_por_tu_donacion',
+          4 => 'home_beneficiados',
+          5 => 'home_de_causas',
+          6 => 'home_testimonios',
+          7 => 'impactos',
+          8 => 'propositos',
+          9 => 'slider_donaciones',
+          10 => 'publicaciones',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+    'field_imagen_fondo_cifras' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'uri_scheme' => 'public',
+        'default_image' => 0,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_imagen_fondo_cifras' => array(
+                'fid' => 'field_imagen_fondo_cifras_fid',
+                'alt' => 'field_imagen_fondo_cifras_alt',
+                'title' => 'field_imagen_fondo_cifras_title',
+                'width' => 'field_imagen_fondo_cifras_width',
+                'height' => 'field_imagen_fondo_cifras_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_imagen_fondo_cifras' => array(
+                'fid' => 'field_imagen_fondo_cifras_fid',
+                'alt' => 'field_imagen_fondo_cifras_alt',
+                'title' => 'field_imagen_fondo_cifras_title',
+                'width' => 'field_imagen_fondo_cifras_width',
+                'height' => 'field_imagen_fondo_cifras_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_imagen_fondo_cifras',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'campanas_donaciones',
+          1 => 'publicaciones',
+          2 => 'eventos',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+    'field_path_noticias' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_path_noticias' => array(
+                'value' => 'field_path_noticias_value',
+                'format' => 'field_path_noticias_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_path_noticias' => array(
+                'value' => 'field_path_noticias_value',
+                'format' => 'field_path_noticias_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_path_noticias',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'taxonomy_term' => array(
+          0 => 'subcategoria',
+          1 => 'categoria',
+        ),
+      ),
+    ),
+    'field_path_programas' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_path_programas' => array(
+                'value' => 'field_path_programas_value',
+                'format' => 'field_path_programas_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_path_programas' => array(
+                'value' => 'field_path_programas_value',
+                'format' => 'field_path_programas_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_path_programas',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'taxonomy_term' => array(
+          0 => 'tipos_programas',
+        ),
+      ),
+    ),
+    'field_titulo_cifras' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_titulo_cifras' => array(
+                'value' => 'field_titulo_cifras_value',
+                'format' => 'field_titulo_cifras_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_titulo_cifras' => array(
+                'value' => 'field_titulo_cifras_value',
+                'format' => 'field_titulo_cifras_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_titulo_cifras',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'campanas_donaciones',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+    'field_titulo_publicitario' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_titulo_publicitario' => array(
+                'value' => 'field_titulo_publicitario_value',
+                'format' => 'field_titulo_publicitario_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_titulo_publicitario' => array(
+                'value' => 'field_titulo_publicitario_value',
+                'format' => 'field_titulo_publicitario_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_titulo_publicitario',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'publicaciones',
+        ),
+        'taxonomy_term' => array(
+          0 => 'categorias_publicaciones',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'field_boton_anuncio' => array(
+      0 => array(
+        'label' => 'Boton',
+        'widget' => array(
+          'weight' => '9',
+          'type' => 'link_field',
+          'module' => 'link',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'absolute_url' => 1,
+          'validate_url' => 1,
+          'url' => 0,
+          'title' => 'optional',
+          'title_value' => '',
+          'title_label_use_field_label' => 0,
+          'title_maxlength' => '128',
+          'enable_tokens' => 1,
+          'display' => array(
+            'url_cutoff' => '80',
+          ),
+          'attributes' => array(
+            'target' => 'user',
+            'rel' => '',
+            'configurable_class' => 0,
+            'class' => '',
+            'configurable_title' => 0,
+            'title' => '',
+          ),
+          'rel_remove' => 'default',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'link_default',
+            'settings' => array(),
+            'module' => 'link',
+            'weight' => 2,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_boton_anuncio',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+    'field_categoria' => array(
+      0 => array(
+        'label' => 'Categoria',
+        'widget' => array(
+          'weight' => '41',
+          'type' => 'options_select',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'i18n_taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'i18n_taxonomy',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 1,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_categoria',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'subcategoria',
+        'deleted' => '0',
+      ),
+    ),
+    'field_descripcion_publicitario' => array(
+      0 => array(
+        'label' => 'Descripción',
+        'widget' => array(
+          'weight' => '8',
+          'type' => 'text_textarea',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '5',
+            'maxlength_js' => '',
+            'maxlength_js_enforce' => 0,
+            'maxlength_js_truncate_html' => 0,
+            'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 1,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_descripcion_publicitario',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+    'field_es_un_programa_' => array(
+      0 => array(
+        'label' => 'Es un Programa?',
+        'widget' => array(
+          'weight' => '42',
+          'type' => 'options_onoff',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(
+            'display_label' => 0,
+          ),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'list_default',
+            'settings' => array(),
+            'module' => 'list',
+            'weight' => 1,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Acá usted puede seleccionar si es un programa que ofrece la universidad.',
+        'default_value' => array(
+          0 => array(
+            'value' => 0,
+          ),
+        ),
+        'field_name' => 'field_es_un_programa_',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'tipos_programas',
+        'deleted' => '0',
+      ),
+    ),
+    'field_imagen_banner_mob_maestra4' => array(
+      0 => array(
+        'label' => 'Imagen mobile',
+        'widget' => array(
+          'weight' => '11',
+          'type' => 'image_image',
+          'module' => 'image',
+          'active' => 1,
+          'settings' => array(
+            'progress_indicator' => 'throbber',
+            'preview_image_style' => 'thumbnail',
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'alt_field' => 1,
+          'title_field' => 1,
+          'default_image' => 0,
+          'image_field_caption' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'image',
+            'settings' => array(
+              'image_style' => '',
+              'image_link' => '',
+            ),
+            'module' => 'image',
+            'weight' => 4,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_imagen_banner_mob_maestra4',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+    'field_imagen_fondo_cifras' => array(
+      0 => array(
+        'label' => 'Imagen de fondo',
+        'widget' => array(
+          'weight' => '10',
+          'type' => 'image_image',
+          'module' => 'image',
+          'active' => 1,
+          'settings' => array(
+            'progress_indicator' => 'throbber',
+            'preview_image_style' => 'thumbnail',
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'alt_field' => 1,
+          'title_field' => 1,
+          'default_image' => 0,
+          'image_field_caption' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'image',
+            'settings' => array(
+              'image_style' => '',
+              'image_link' => '',
+            ),
+            'module' => 'image',
+            'weight' => 3,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_imagen_fondo_cifras',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+    'field_path_noticias' => array(
+      0 => array(
+        'label' => 'Path Noticias',
+        'widget' => array(
+          'weight' => '42',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_path_noticias',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categoria',
+        'deleted' => '0',
+      ),
+      1 => array(
+        'label' => 'Path Noticias',
+        'widget' => array(
+          'weight' => '42',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 1,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_path_noticias',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'subcategoria',
+        'deleted' => '0',
+      ),
+    ),
+    'field_path_programas' => array(
+      0 => array(
+        'label' => 'Path programas',
+        'widget' => array(
+          'weight' => '41',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_path_programas',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'tipos_programas',
+        'deleted' => '0',
+      ),
+    ),
+    'field_titulo_cifras' => array(
+      0 => array(
+        'label' => 'Titulo Interna',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+            'maxlength_js' => 0,
+            'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 5,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_titulo_cifras',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+    'field_titulo_publicitario' => array(
+      0 => array(
+        'label' => 'Titulo',
+        'widget' => array(
+          'weight' => '7',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+            'maxlength_js' => 0,
+            'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_titulo_publicitario',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'categorias_publicaciones',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);

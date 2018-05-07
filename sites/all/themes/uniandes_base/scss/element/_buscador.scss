@@ -1,0 +1,63 @@
+/* Buscador */
+
+.page-search-node {
+	.region-content {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+
+		@include media-query(anchoMobile) {
+			width: 750px;
+		}
+		@include media-query(anchoTablet) {
+			width: 970px;
+		}
+		@include media-query(anchoDesktop) {
+			width: 1170px;
+		}
+	}
+
+
+	h2 {
+		text-align: center;
+		margin: 0;
+		padding: 50px 0 25px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Latobold';
+		font-size: 1.5rem;
+
+		&:before{    
+			content: '';
+			display: inline-block;
+			width: 5px;
+			height: 18px;
+			border: 1px solid #484851;
+			margin-right: 10px;
+		}
+	}
+
+	#search-form {
+		display: none;
+	}
+	.search-results {
+		.title {
+			a {
+				height: auto;
+				overflow: inherit;
+				font-family: 'Latolight', sans-serif;
+				font-size: 1.1rem;
+				color: #337ab7;
+			}
+		}
+
+		.search-snippet-info {
+			p {
+				color: #333333;
+				font-family: 'Latolight', sans-serif;
+				font-size: 0.9rem;
+			}
+		}
+	}
+}

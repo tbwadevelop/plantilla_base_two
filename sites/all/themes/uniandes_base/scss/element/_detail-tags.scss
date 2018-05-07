@@ -1,0 +1,33 @@
+
+.title-tag {
+	.tag-result {
+		font-size: 1rem;
+		color: #484851;
+		line-height: 1.1rem;
+		font-family: 'Crimson_textroman', sans-serif;
+	}
+
+	.tag-name {
+		border-bottom: 1px solid;
+		display: inline-block;
+		font-size: 1.8rem;
+		line-height: 2rem;
+		font-family: 'Crimson_textroman', sans-serif;
+	}
+}
+
+.tags-list {
+	.list_tag {
+		padding: 0;
+		li.item-list_tag {
+			display: block;
+			padding: 15px 0;
+
+			figure {
+				img {
+					border-top: solid 8px #7d7d7d;
+				}
+			}
+		}
+	}
+}

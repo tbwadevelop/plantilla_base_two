@@ -1,0 +1,160 @@
+.slider-internal-detail {
+	padding: 20px 0;
+
+	iframe {
+		left: 0;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border: none;
+	}
+
+	.slide-for-detail {
+		width: 100%;
+
+		.item-slide-for-detail {
+			&.iframe {
+				height: 0;
+				overflow: hidden;
+				padding-bottom: 56.25%;
+				position: relative;
+				width: 100%;
+				background: #f0eeee;
+				
+				&.slick-current {
+					padding-bottom: 28.25%
+				}
+			}
+
+			figcaption {
+				text-align: center;
+				padding: 5px 10px 0;
+				font-size: 0.9rem;
+			}
+
+			figure {
+				margin: 0 auto;
+				text-align: center;
+				&.img-news-desktop {
+					display: block;
+				}
+
+				img {
+					max-width: inherit;
+					height: auto;
+					width: 100%;
+
+				}
+			}
+		}
+
+		.slick-list {
+			width: 90%;
+		}
+
+
+		button {
+			&.slick-prev {
+				&.slick-arrow {
+
+					background: url('../img/arrow_left.png') no-repeat center;
+					background-size: 45px 45px;
+					width: 45px;
+					height: 45px;
+					left: 0px;
+					border: 0;
+					top: 40%;
+
+					@include media-query(anchoTablet) {
+						display: block !important;
+					}
+
+					@include media-query(anchoDesktop) {
+						background-size: 50px 50px;
+						width: 50px;
+						height: 50px;
+						left: -5px;
+					}
+				}
+			}
+
+			&.slick-next {
+				&.slick-arrow{
+					background: url('../img/arrow_right.png') no-repeat center;
+					background-size: 45px 45px;
+					width: 45px;
+					height: 45px;
+					right: 0px;
+					border: 0;
+					top: 40%;
+
+					@include media-query(anchoTablet) {
+						display: block !important;
+					}
+					@include media-query(anchoDesktop) {
+						background-size: 50px 50px;
+						width: 50px;
+						height: 50px;
+						right: -5px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.slide-nav-detail {
+		padding: 30px 0 0;
+		width: 95%;
+		margin: 0 auto;
+
+		.slick-track {
+			margin: 0 auto;
+		}
+
+
+		@include media-query(anchoMobile) {
+			width: 85%;
+		}
+
+		button {
+			@include media-query(anchoMobile) {
+				&.slick-next {
+					display: block !important;
+					&.slick-arrow {
+						background-size: 50px 50px;
+						width: 50px;
+						height: 50px;
+						right: -40px;
+						border: 0;
+						background: url('../img/arrow_left.png') no-repeat center;
+					}
+				}
+
+				&.slick-prev {
+					display: block !important;
+					&.slick-arrow {
+						background-size: 50px 50px;
+						width: 50px;
+						height: 50px;
+						left: -40px;
+						border: 0;
+						background: url('../img/arrow_right.png') no-repeat center;
+					}
+				}
+			}
+		}
+
+		.item-slide-nav-detail {
+			margin: 0 5px;
+
+			figure {
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

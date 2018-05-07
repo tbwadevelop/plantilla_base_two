@@ -1,0 +1,77 @@
+.block-views-vista-anuncios-home-block {
+	.list_featured_notice {
+		.img-featured_notice {
+			@include media-query(anchoTablet) {
+				float: left;
+				width: 50%;
+			}
+
+			border: 5px solid #fff;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.txt-featured_notice {
+			background: #fff;
+			border-top: 4px solid #b600eb;
+			padding: 20px;
+			overflow: hidden;
+
+			@include media-query(anchoMobile) {
+				margin: 20px 0 0;
+			}
+
+			@include media-query(anchoTablet) {
+				float: left;
+				width: 50%;
+			}
+
+			.title-featured_notice {
+				color: #484851;
+				font-size: 1.3rem;
+				line-height: 1.1;
+				font-weight: 600;
+				text-decoration: none;
+			}
+
+			.txt_featured_notice {
+				font-size: 0.9rem;
+			}
+
+			.btn-featured_slide {
+				float: right;
+				font-size: 0.8rem;
+				padding: 10px 20px;
+			}
+		}
+	}
+
+	button {
+		&.slick-prev {
+			display: none !important;
+		}
+
+		&.slick-next {
+			display: none !important;
+		}
+	}
+
+	.slick-dots {
+		li {
+			button {
+				background: #f1eeee;
+				border: 1px solid #b600eb;
+			}
+
+			&.slick-active {
+				button {
+					background: #b600eb;
+					border: 1px solid #b600eb;
+				}
+			}
+		}
+	}
+}

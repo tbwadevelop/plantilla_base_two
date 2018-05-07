@@ -1,0 +1,164 @@
+.view-calendar-events {
+	padding: 0 15px;
+
+	@include media-query(anchoTablet) {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.views-field {
+		&.views-field-field-fecha-inicio {
+			display: none;
+
+			@include media-query(anchoMobile) {
+				display: block;
+			}
+		}
+	}
+
+	.view-header {
+		padding: 40px 0 0;
+
+		.date-nav {
+			margin: 0;
+			padding: 0; 
+		}
+	}
+	.pager {
+		position: relative;
+		margin: 30px auto;
+		background: none repeat scroll 0 0 #dfdfdf;
+		padding: 5px 0;
+
+		@include media-query(anchoMobile) {
+			margin: 0 0 30px;
+			top: -37px;
+			background: transparent;
+		}
+		.date-prev {
+			position: inherit;
+			right: 0;
+			left: 0;
+			float: left;
+			width: 50%;
+
+			@include media-query(anchoMobile) {
+				float: none;
+				padding: 5px 0;
+				position: absolute;
+				right: 80px;
+				left: auto;
+				text-align: right;
+				top: 0px;
+				width: auto;
+				z-index: 1;
+			}
+
+			a {
+				font-size: 0.85rem;
+				width: 100px;
+				margin: 0 auto;
+				display: block;
+				text-align: center;
+				font-weight: normal;
+
+				@include media-query(anchoMobile) {
+					display: inline-block;
+					margin: 0 10px;
+				}
+			}
+		}
+		.date-next {
+			position: inherit;
+			right: 0;
+			left: 0;
+			float: right;
+			width: 50%;
+
+			@include media-query(anchoMobile) {
+				float: none;
+				padding: 5px 0;
+				position: absolute;
+				right: 0px;
+				left: inherit;
+				text-align: right;
+				top: 0px;
+				width: auto;
+				z-index: 1;
+			}
+
+
+			a {
+				font-size: 0.85rem;
+				margin: 0 auto;
+				width: 80px;
+				display: block;
+				text-align: center;
+				font-weight: normal;
+
+				@include media-query(anchoMobile) {
+					display: inline-block;
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+
+	.calendar-calendar {
+		th {
+			&.days {
+				background: #1e1e1e;
+				color: #fff;
+				font-weight: normal;
+				border: 1px solid #fff;
+			}
+		}
+
+		tr {
+			background: #f4f1f1;
+		}
+
+
+		.month-view {
+			.full {
+				tr {
+					td {
+						&.date-box{
+							&.empty {
+								background: #923939;
+								color: #fff;
+								font-weight: normal;
+							}
+							&.today {
+								border-color: #923939;
+							}
+						}
+
+						&.single-day {
+							&.empty {
+								background: #923939;
+								color: #fff;
+								font-weight: normal;
+							}
+							&.today {
+								border: 2px solid #923939;
+								border-top: 0;
+							}
+
+							div {
+								&.monthview {
+									background: #fff;
+									border-radius: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			a {
+				color:  #923939;
+			}
+		}
+	}
+}

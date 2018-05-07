@@ -1,0 +1,114 @@
+.block-views-vista-publicaciones-home-block {
+    padding: 50px 0 25px;
+
+    .title_featured_publications {
+        h2 {
+            font-family: "Lato",sans-serif;
+            color: #484851;
+            font-size: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 40px;
+
+            @include media-query(anchoMobile) {
+                font-size: 2.5rem;
+                line-height: 2.6rem;
+            } 
+
+            &:before {
+                content: '';
+                border: 1px solid #484851;
+                display: inline-block;
+                height: 22px;
+                margin-right: 5px;
+                width: 5px;
+
+                @include media-query(anchoMobile) {
+                    height: 33px;
+                    width: 7px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    .featured_publications {
+        padding: 20px 0;
+
+        .slick-dots {
+           @include media-query(anchoTablet) {
+            display: none !important;
+        }
+
+        li {
+            button {
+                background: #f1eeee;
+                border: 1px solid #484851;
+            }
+
+            &.slick-active {
+                button {
+                    background: #484851;
+                    border: 1px solid #f1eeee;
+                }
+            }
+        }
+    }
+    .slick-list {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.list-item_featured_publications {
+    .img-featured_publications {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .txt-featured_publications {
+        max-width: 70%;
+        margin: 0 auto;
+
+    h1 {
+        &.title-featured_publications {
+            font-size: 1.3rem;
+            line-height: 1.1;
+            margin: 0;
+            min-height: 121px;
+            padding: 25px 0 15px;
+
+            @include media-query(mobile) {
+             min-height: inherit;
+         }
+
+         a {
+            color: #24242b;
+            text-decoration: none;
+            font-family: "Crimson Text",serif;
+        }
+    }
+}
+
+p {
+    &.txt_featured_publications {
+        font-size: 0.9rem;
+        color: #24242b;
+
+        @include media-query(mobile) {
+            font-size: 0.85rem;
+        }
+        @include media-query(anchoTablet) {
+            padding: 0 5px;
+        }
+    }
+}
+}
+}
+
+.list_featured_publications {
+    padding-right: 10px;
+}
+}

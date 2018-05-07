@@ -1,0 +1,283 @@
+.publication-detail {
+	overflow: hidden;
+
+	@include media-query(anchoMobile) {
+		padding-bottom: 80px;
+	}
+
+	.publication-detail_title {
+		text-align: center;
+		padding: 20px 0;
+
+		@include media-query(mobileMedium) {
+			padding: 20px 0 40px;
+		}
+
+		h1 {
+			font-family: 'Latobold', sans-serif;
+			font-weight: 600;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+			font-size: 1.5rem;
+
+
+			@include media-query(mobile) {
+				font-size: 1.1rem;
+			}
+
+			@include media-query(anchoTablet) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.publication_book-detail {
+		padding-bottom: 20px;
+
+		@include media-query(mobileMedium) {
+			float: left;
+			width: 40%;
+			margin-right: 4%;
+		}
+
+		figure {
+			width: 70%;
+			margin: 0 auto;
+
+			@include media-query(mobileMedium) {
+				width: 100%;
+			}
+
+			&.book-cover {
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		footer {
+			&.book-price {
+				background: #f4f1f1;
+				text-align: center;
+				padding: 20px;
+				margin: 10px auto;
+				width: 70%;
+
+				@include media-query(mobileMedium) {
+					width: 100%;
+					margin: 10px 0;
+				}
+
+				p {
+					font-size: 1.5rem;
+					color: #484851;
+					font-weight: 600;
+					font-family: "Crimson Text",serif;
+					margin: 0 0 5px;
+					padding: 0 0 15px;
+
+					@include media-query(mobile) {
+						font-size: 1.1rem;
+					}
+
+					span {
+						padding-left: 10px;
+					}
+				}
+
+				.btn-default {
+					padding: 6px 40px;
+
+
+					@include media-query(mobile) {
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	.publication_book-txt {
+		@include media-query(mobileMedium) {
+			float: left;
+			width: 56%;
+		}
+
+		header {
+			padding-bottom: 25px;
+
+			p {
+				margin: 0;
+
+				> span {
+					padding-left: 4px;
+				}
+			}
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	.book-content_txt {
+		&:before {
+			content: '';
+			display: block;
+			width: 100px;
+			border-top: 1px solid #777;
+			height: 1px;
+		}
+
+		h2 {
+			font-size: 1.3rem;
+			padding: 20px 0;
+			margin: 0;
+			color: #777;
+		}
+
+		p {
+			color: #777;
+		}
+
+		footer {
+			background: transparent;
+
+			p {
+				color: #777;
+				margin: 0 0 5px;
+				font-family: "Crimson Text",serif;
+
+				> span {
+					padding-left: 4px;
+				}
+			}
+		}
+	}
+}
+
+
+.related-publication {
+	clear: both;
+	position: relative;
+
+	figure {
+		position: relative;
+
+		img {
+			max-width: 100%;
+			height: auto;
+
+			&.img-desktop {
+				display: none;
+
+				@include media-query(anchoMobile) {
+					display: block;
+				}
+			}
+			&.img-mobile {
+				@include media-query(anchoMobile) {
+					display: none;
+				}
+			}
+		}
+
+		&:before {
+			content: '';
+			background: rgba(0, 0, 0, 0.6);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display: block;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 0;
+		}
+	}
+
+	.detail-related-publication {
+		position: absolute;
+		top: 25%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 15px;
+		text-align: center;
+
+		@include media-query(mobile) {
+			top: 0;
+		}
+
+		@include media-query(anchoMobile) {
+			border: 1px solid #fff;
+			padding: 20px 40px;
+			width: 700px;
+			text-align: left;
+			top: 5%;
+		}
+
+		@include media-query(anchoTablet) {
+			top: 13%;
+		}
+
+		@include media-query(anchoDesktop) {
+			width: 1000px;
+		}
+
+		h1 {
+			color: #fff;
+			text-transform: uppercase;
+			font-family: 'Latobold', sans-serif;
+			font-weight: bold;
+			font-size: 1.1rem;
+
+			@include media-query(anchoMobile) {
+				display: table-cell;
+				width: 48%;
+				text-align: center;
+				border-right: 1px solid #fff;
+				vertical-align: middle;
+			}
+			@include media-query(anchoDesktop) {
+				font-size: 1.8rem;
+			}
+			@include media-query(anchoTablet) {
+				font-size: 1.5rem;
+			}
+		}
+
+		.content_related-publication {
+			@include media-query(anchoMobile) {
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: 20px;
+			}
+
+			@include media-query(anchoDesktop) {
+				padding: 20px 40px;
+			}
+
+			p {
+				color: #fff;
+				margin: 0;
+				padding-bottom: 30px;
+				font-size: 0.9rem;
+
+				@include media-query(anchoTablet) {
+					font-size: 1rem;
+				}
+			}
+
+			a {
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				padding: 8px 40px;
+			}
+		}
+
+	}
+} 

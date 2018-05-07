@@ -1,0 +1,108 @@
+<?php
+
+module_load_include('inc', 'uniandes_calendario', 'uniandes_calendario.features');
+
+/**
+ * @file
+ * The module file that allows events to be created and required admin approval.
+ */
+
+// Machine name for our custom taxonomy.
+define('TAXONOMY_NAME', 'categoria_eventos');
+
+/**
+ * Implements hook_views_api().
+ */
+function uniandes_calendario_views_api() {
+  return array('api' => 3.0);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function uniandes_calendario_menu() {
+  // Creating menu for configuration and event management pages.
+  $items['admin/config/eventos/exportar'] = array(
+    'title' => 'Exportar eventos',
+    'description' => 'Exportar la información de los eventos clasificados por fecha.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('uniandes_calendario_content'),
+    'access arguments' => array('export event data'),
+    'weight' => -10,
+    'file' => 'uniandes_calendario.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function uniandes_calendario_permission() {
+  $perms = array(
+    'export event data' => array(
+      'title' => t('Exportar información de los eventos por fecha'),
+      'restrict access' => TRUE,
+    ),
+  );
+  return $perms;
+}
+
+function uniandes_calendario_theme() {
+  return array(
+    'views_view__calendar_events__page' => array(
+      'variables' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+      'template' => 'views-view--calendar-events--page',
+      'base hook' => 'views_view',
+      'path' => drupal_get_path('module', 'uniandes_calendario').'/templates',
+    ),
+    'views_view__export_events__page' => array(
+      'variables' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+      'template' => 'views-view--export-events--page',
+      'base hook' => 'views_view',
+      'path' => drupal_get_path('module', 'uniandes_calendario').'/templates',
+    ),
+  );
+}
+
+function uniandes_calendario_tabs($view) {
+  switch ($view->name) {
+    case 'calendar_events':
+      $view1 = $view; 
+      $view2 = views_get_view('export_events');
+      break;
+    case 'export_events':
+      $view2 = $view;
+      $view1 = views_get_view('calendar_events');
+      break;
+  }
+
+  $links = [];
+
+  foreach ($view1->display as $name => $v) {
+    if (!empty($v->display_options['path'])) {
+      $abs_path = url($v->display_options['path'], array('absolute' => TRUE));
+      $link_class = ($view->current_display == $name)? 'active':'';
+      $links[$name] = array(
+        'title' => $v->display_options['menu']['title'],
+        'href' => $abs_path,
+        'attributes' => array('class' => array($link_class)),
+      );
+    }
+  }
+  foreach ($view2->display as $name => $v) {
+    if (!empty($v->display_options['path'])) {
+      $abs_path = url($v->display_options['path'], array('absolute' => TRUE));
+      $link_class = ($view->current_display == $name)? 'active':'';
+      $links[$name] = array(
+        'title' => $v->display_options['menu']['title'],
+        'href' => $abs_path,
+        'attributes' => array('class' => array($link_class)),
+      );
+    }
+  }
+  
+  $attributes =array('class' => 'nav nav-tabs');
+  $heading = array('text' => t('Menú calendario'), 'level' => 'h2', 'class' => 'sr-only');
+  
+  print theme_links(array('links' => $links, 'attributes' => $attributes, 'heading' => $heading));
+}

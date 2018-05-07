@@ -1,0 +1,22 @@
+name = Uniandes calendario de eventos
+description = Crea páginas de visualización del tipo de contenido eventos en forma de calendario.
+package = Uniandes Calendario
+core = 7.x
+dependencies[] = calendar
+dependencies[] = date
+dependencies[] = date_popup
+dependencies[] = file
+dependencies[] = i18n_taxonomy
+dependencies[] = image
+dependencies[] = link
+dependencies[] = node
+dependencies[] = options
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = views_data_export
+dependencies[] = views_data_export_phpexcel
+configure = admin/config/eventos/exportar
+version = "7.x-1.0"
+core = "7.x"
+project = "uniandes_calendario"
+

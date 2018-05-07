@@ -1,0 +1,57 @@
+<?php
+
+
+function categorias_publicaciones_menu() {
+  $items = array();
+
+  $items['admin/config/content/categorias_publicaciones'] = array(
+  'title' => t('Configuración de la categoría actual'),
+  'description' => t('Selecciona la categoría que se mostrará en el sitio'),
+  'page callback' => 'drupal_get_form',
+  'page arguments' => array('categorias_publicaciones_admin'),
+  'access arguments' => array('administer site configuration'),
+  );
+
+  return $items;
+}
+
+
+function categorias_publicaciones_obtener_taxonomias(){
+
+  $vocabulary = taxonomy_vocabulary_machine_name_load('categorias_publicaciones');  
+  $terms = entity_load('taxonomy_term', FALSE, array('vid' => $vocabulary->vid));
+    $taxonomy=array();
+
+
+  //die();
+$lista=array();
+foreach ($terms as $key) {
+  $lista[$key->tid]=$key->name;
+  }
+
+  return $lista;
+}
+
+
+function categorias_publicaciones_admin() {
+
+
+  $form = array();
+ 
+  $taxonomias=categorias_publicaciones_obtener_taxonomias();
+
+  $form['taxonomy_group']['taxonomy'] = array(
+    '#title' => t('Categoria a mostrar'),
+    '#type' => 'select', 
+    '#default_value' => variable_get('taxonomy', "Seleccione la categoría que se cargara"),
+    '#options' => $taxonomias,
+    '#required' => TRUE
+    );
+
+ 
+
+  return system_settings_form($form);
+}
+
+
+
